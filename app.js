@@ -72,9 +72,11 @@ const checkQuiz = () => {
     inAns.classList.remove('animate-correct');
     inAns.classList.remove('animate-wrong');
     if (inputtedAns === correctAns) {
+        inAns.style.backgroundColor = "lightgreen";
         inAns.classList.add('animate-correct');
         inAns.value = '';
     } else {
+        inAns.style.backgroundColor = "lightcoral";
         inAns.classList.add('animate-wrong');
         inAns.value = correctAns;
     }
