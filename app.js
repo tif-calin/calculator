@@ -25,7 +25,6 @@ const basicOp = (n1, n2, op) => {
     return result;
 };
 
-
 // CALC
 
 const inNum1 = document.getElementById('calc-in1');
