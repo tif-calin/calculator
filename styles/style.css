@@ -97,9 +97,9 @@ footer {
     box-shadow: var(--shadow);
 }
   
-  @keyframes pulse {
+@keyframes pulse {
     20% {
-      transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
+        transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
     }
 
     40% {
@@ -108,13 +108,12 @@ footer {
 
     60% {
         transform: rotate3d(-10, 10, 10, 50deg) scale(1.2);
-      }
+        }
 
     80% {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
-
-  }
+}
 
 /*
 CALCULATOR
@@ -132,16 +131,18 @@ div.calc {
     text-align: center;
 }
 
-.calc input {
+.user-input {
     transition: width 0.4s ease-in-out;
 }
 
-.calc input:focus {
+.user-input:focus {
     width: 100px;
 }
 
 .calc select {
     height: 30px;
+    background: none;
+    border-style: dotted;
 }
 
 .calc button {
@@ -150,4 +151,60 @@ div.calc {
 
 .calc span {
     font-weight: bold;
+    background-color: none;
+    border-color: black;
+    padding: 0 5px;
+    height: auto;
+    width: fit-content;
+    display: inline-block;
+}
+
+/*
+QUIZ
+*/
+
+.quiz * {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding: auto;
+    text-align: center;
+}
+
+.quiz span {
+    display: inline-block;
+}
+
+.quiz .quiz-num {
+    display: inline-block;
+    height: 50px;
+    padding: 9px;
+    background-color: lightgray;
+    border-radius: 5%;
+}
+
+.quiz button {
+    height: 30px;
+}
+
+.quiz input {
+    width: 75px;
+}
+
+.animate-wrong {
+    animation: wrong-answer 2s;
+}
+
+.animate-correct {
+    animation: correct-answer 2s;
+}
+
+@keyframes wrong-answer {
+    10% {background-color: lightcoral};
+    100% {background-color: white};
+}
+
+@keyframes correct-answer {
+    10% {background-color: lightgreen};
+    100% {background-color: white};
 }
