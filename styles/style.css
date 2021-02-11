@@ -28,6 +28,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-color: floralwhite;;
 }
 
 section {
@@ -60,7 +61,6 @@ footer {
     box-shadow: var(--shadow);
 }
 
-
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
@@ -77,8 +77,6 @@ h2 {
 header img {
     height: var(--header-height);
 }
-
-
 
 content {
     width: 80%;
@@ -118,11 +116,38 @@ footer {
 
   }
 
-p.calc {
-    background-color:aliceblue;
+/*
+CALCULATOR
+*/
+
+div.calc {
     align-content: center;
 }
 
-.calc input, button {
-    margin: 20px 5px;
+.calc * {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding: auto;
+    text-align: center;
+}
+
+.calc input {
+    transition: width 0.4s ease-in-out;
+}
+
+.calc input:focus {
+    width: 100px;
+}
+
+.calc select {
+    height: 30px;
+}
+
+.calc button {
+    height: 30px;
+}
+
+.calc span {
+    font-weight: bold;
 }

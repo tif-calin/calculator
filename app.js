@@ -19,10 +19,10 @@ btn.addEventListener('click', () => {
             result = Number(inNum1.value) - Number(inNum2.value);
             break;
         case "*":
-            result = (Number(inNum1.value) * Number(inNum2.value)).toFixed(3);
+            result = (Number(inNum1.value) * Number(inNum2.value));
             break;
         case "/":
-            result = (Number(inNum1.value) / Number(inNum2.value)).toFixed(3);
+            result = (Number(inNum1.value) / Number(inNum2.value));
             break;
         default:
             result = Number(inNum1.value) + Number(inNum2.value);
